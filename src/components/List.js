@@ -11,7 +11,10 @@ class List extends Component {
     const response = await fetch(`https://developer.nps.gov/api/v1/parks?fields=images&api_key=${process.env.API_KEY}`)
     const json = await response.json()
     this.setState({data: json.data})
+    console.log(this.state.data)
+    console.log(this.props.pageContext)
   }
+
   render() { 
     return (<div>
       <div className = "Header">

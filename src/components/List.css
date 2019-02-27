@@ -40,7 +40,7 @@
   list-style-type: none;
   padding:0px;
   border-bottom: 1px solid grey;
-  width:100%
+  width:100%;
 }
 
 .Header {
@@ -60,7 +60,7 @@
 
 
 .description {
-  width:50%;
+  width:70%;
   line-height:150%;
 }
 

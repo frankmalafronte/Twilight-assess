@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.List {
+  padding:0px;
+  font-family: 'Open-Sans',sans-serif;
+}
+
+.Header {
+  display:flex;
+  justify-content: center;
+  border-bottom: 2px solid grey;
+  font-size:30px;
+}
+.Item {
+  display: block;
+}
+
+.Item img {
+  padding-bottom: 5px;
+  width: 100%
+}
+
+.Title{
+  padding-bottom:10px;
+  font-size:16px;
+  font-weight: bold;
+}
+
+.description {
+  line-height: 125%;
+  padding-bottom:5px;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+.Item {
+  display: flex;
+  list-style-type: none;
+  padding:0px;
+  border-bottom: 1px solid grey;
+}
+
+.Header {
+  font-size: 60px;
+}
+
+.Info {
+  margin: 5px;
+  font-size:16px;
+}
+
+
+.Item img {
+ width:300px;
+ height:200px;
+}
+
+
+.description {
+  width:50%;
+  line-height:150%;
+}
+
+}

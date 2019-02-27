@@ -17,7 +17,8 @@
 
 .Item img {
   padding-bottom: 5px;
-  width: 100%
+  width: 100%;
+  height:300px;
 }
 
 .Title{
@@ -39,6 +40,7 @@
   list-style-type: none;
   padding:0px;
   border-bottom: 1px solid grey;
+  width:100%
 }
 
 .Header {
@@ -52,7 +54,7 @@
 
 
 .Item img {
- width:300px;
+ width:20%;
  height:200px;
 }
 

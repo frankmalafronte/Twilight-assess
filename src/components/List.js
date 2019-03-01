@@ -15,8 +15,6 @@ class List extends Component {
     );
     const json = await response.json();
     this.setState({ data: json.data });
-    console.log(this.state.data);
-    console.log(this.props.pageContext);
   }
 
   render() {

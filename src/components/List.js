@@ -9,8 +9,6 @@ class List extends Component {
 
   async componentDidMount() {
     console.log(process.env.API_KEY);
-    console.log(process.env.NODE_ENV);
-    console.log(process.env);
     const response = await fetch(
       `https://developer.nps.gov/api/v1/parks?fields=images&api_key=${
         process.env.API_KEY
@@ -21,23 +19,21 @@ class List extends Component {
   }
 
   render() {
-    console.log(this.state);
     return (
-      // <div>
-      //   <div className="Header">America's National Parks</div>
-      //   <ul className="List">
-      //     {this.state.data.map(item => (
-      //       <li className="Item" key={item.name}>
-      //         <img src={item.images[0].url} alt="" />
-      //         <div className="Info">
-      //           <div className="Title">{item.fullName}</div>
-      //           <div className="description">{item.description}</div>
-      //         </div>
-      //       </li>
-      //     ))}
-      //   </ul>
-      // </div>
-      <div>{process.env.test}</div>
+      <div>
+        <div className="Header">America's National Parks</div>
+        <ul className="List">
+          {this.state.data.map(item => (
+            <li className="Item" key={item.name}>
+              <img src={item.images[0].url} alt="" />
+              <div className="Info">
+                <div className="Title">{item.fullName}</div>
+                <div className="description">{item.description}</div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
     );
   }
 }

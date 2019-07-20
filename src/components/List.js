@@ -4,14 +4,14 @@ import "./List.css";
 class List extends Component {
   constructor(props) {
     super(props);
-    this.state = { data: [] };
+    this.state = { data: [], key: process.env.API_KEY };
   }
 
   async componentDidMount() {
-    console.log(process.env.API_KEY);
+    console.log(this.state);
     const response = await fetch(
       `https://developer.nps.gov/api/v1/parks?fields=images&api_key=${
-        process.env.API_KEY
+        this.state.key
       }`
     );
     const json = await response.json();

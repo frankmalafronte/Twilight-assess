@@ -20,6 +20,7 @@ class List extends Component {
   }
 
   render() {
+    console.log(this.state);
     return (
       <div>
         <div className="Header">America's National Parks</div>

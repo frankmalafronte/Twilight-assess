@@ -9,6 +9,7 @@ class List extends Component {
 
   async componentDidMount() {
     console.log(process.env.API_KEY);
+    console.log(process.env.NODE_ENV);
     const response = await fetch(
       `https://developer.nps.gov/api/v1/parks?fields=images&api_key=${
         process.env.API_KEY

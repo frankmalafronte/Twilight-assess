@@ -24,7 +24,7 @@
     ]
   },
   "dependencies": {
-    "gatsby": "^2.1.23",
+    "gatsby": "^2.32.13",
     "gatsby-paginate": "^1.0.17",
     "graphql": "^14.1.1",
     "husky": "^1.3.1",
